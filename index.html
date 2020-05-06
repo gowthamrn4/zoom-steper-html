@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox Timeline Layout</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>  
+</head>
+
+<body>
+  <section id=timeline>
+	<h1 style="font-size:25px;">Step to create zoom JWT token</h1>
+	<p class="leader">All cards must be the same height and width for space calculations on large screens.</p>
+	<button style="position: absolute;right:40px;top:40px" class="btn">Hide Stepper</button>
+	<div class="demo-card-wrapper" id="demo-card-wrapper">
+		<div class="demo-card demo-card--step1">
+			<div class="head">
+				<div class="number-box">
+					<span>01</span>
+				</div>
+				<h2 style="font-size:12px;"><span class="small">Step 1</span>marketplace.zoom.us/develop/create</h2>
+			</div>
+			<div class="body">
+				<a href="https://marketplace.zoom.us/develop/create" target="_blank">https://marketplace.zoom.us/develop/create</a>
+				<img src="image/screen_01.png" alt="Graphic">
+			</div>
+		</div>
+
+		<div class="demo-card demo-card--step2">
+			<div class="head">
+				<div class="number-box">
+					<span>02</span>
+				</div>
+				<h2 style="font-size:12px;"><span class="small">Step 2</span> Develop -> Build App</h2>
+			</div>
+			<div class="body">
+				<p>Develop -> Build App</p>
+				<img src="image/buildapp.png" alt="Graphic" style="height:85%">
+			</div>
+		</div>
+
+		<div class="demo-card demo-card--step3">
+			<div class="head">
+				<div class="number-box">
+					<span>03</span>
+				</div>
+				<h2 style="font-size:12px;"><span class="small">Step 3</span> Sign In</h2>
+			</div>
+			<div class="body">
+			    <p>Sign In</p>
+				<img src="image/login_screen.png" style="height:92%" alt="Graphic">
+			</div>
+		</div>
+
+		<div class="demo-card demo-card--step4">
+			<div class="head">
+				<div class="number-box">
+					<span>04</span>
+				</div>
+				<h2 style="font-size:12px;"><span class="small">Step 4</span> Terms & Conditions</h2>
+			</div>
+			<div class="body">
+				<p>Terms & Conditions</p>
+				<img src="image/termsofservices.png" alt="Graphic">
+			</div>
+		</div>
+
+		<div class="demo-card demo-card--step5">
+			<div class="head">
+				<div class="number-box">
+					<span>05</span>
+				</div>
+				<h2 style="font-size:12px;"><span class="small">Step 5</span> Choose your app type</h2>
+			</div>
+			<div class="body">
+				<p>Choose your app type -> Create</p>
+				<img src="image/chooseyourapptype.png" alt="Graphic">
+			</div>
+		</div>
+
+		<div class="demo-card demo-card--step6">
+			<div class="head">
+				<div class="number-box">
+					<span>06</span>
+				</div>
+				<h2 style="font-size:12px;"><span class="small">Step 6</span>Enter your app name</h2>
+			</div>
+			<div class="body">
+				<p>Enter your app name -> Create</p>
+				<img src="image/createnewapp.png" alt="Graphic">
+			</div>
+		</div>
+		
+    	<div class="demo-card demo-card--step7">
+			<div class="head">
+				<div class="number-box">
+					<span>07</span>
+				</div>
+				<h2 style="font-size:12px;"><span class="small">Step 7</span>Basic Information</h2>
+			</div>
+			<div class="body">
+				<p>Basic Information</p>
+				<img src="image/basicinformation.png" alt="Graphic">
+			</div>
+		</div>
+
+    	<div class="demo-card demo-card--step8">
+			<div class="head">
+				<div class="number-box">
+					<span>08</span>
+				</div>
+				<h2 style="font-size:12px;"><span class="small">Step 8</span>Developer Contact Information</h2>
+			</div>
+			<div class="body">
+				<p>Developer Contact Information</p>
+				<img src="image/developerci.png" alt="Graphic">
+			</div>
+		</div>
+
+    	<div class="demo-card demo-card--step9">
+			<div class="head">
+				<div class="number-box">
+					<span>09</span>
+				</div>
+				<h2 style="font-size:12px;"><span class="small">Step 9</span>Links(Optional)</h2>
+			</div>
+			<div class="body">
+				<p>Links(Optional)</p>
+				<img src="image/link.png" alt="Graphic">
+			</div>
+		</div>
+
+
+    	<div class="demo-card demo-card--step10">
+			<div class="head">
+				<div class="number-box">
+					<span>10</span>
+				</div>
+				<h2 style="font-size:12px;"><span class="small">Step 10</span>You will be able to see App Credentials</h2>
+			</div>
+			<div class="body">
+				<p>You will be able to see App Credentials API Key,  API Secret</p>
+				<img src="image/apikey.png" alt="Graphic">
+			</div>
+		</div>
+
+		<div class="demo-card demo-card--step5">
+			<div class="head">
+				<div class="number-box">
+					<span>11</span>
+				</div>
+				<h2 style="font-size:12px;"><span class="small">Step 11</span>View JWT Token and set Expiration Time</h2>
+			</div>
+			<div class="body">
+				<p>View JWT Token and set Expiration Time</p>
+				<img src="image/viewJWT.png" alt="Graphic" style="width:90%">
+			</div>
+		</div>
+
+	</div>
+
+	<div class="form" style="margin-top:70px;">
+	  <div style="text-align:center">Enter Your JWT token</div>
+      <div class="form-control" style="margin-left:25%">
+	   <form name="registration">
+	  	<div class="block" style="padding:16px">
+			<label>API Key</label>
+			<input type="text" required  name="api_key" id="api_key"/>
+		</div>
+		<div class="block" style="padding:16px">
+			<label>Expire Date:</label>
+			<input name="date"  type="text" id="datepicker" required/>
+		</div>
+	    <div class="block" style="padding:16px">
+			<label></label>
+		<button id="submit" style="text-align:center;padding:8px">Submit</button>
+		</div>
+		</form>
+	  </div>
+	</div>
+</section>
+  
+<script>
+
+$("#datepicker").datepicker({
+    minDate: 'today'
+});
+
+$(".btn").click(function() {
+   var lable = $(".btn").text().trim();
+   if(lable == "Hide Stepper") {
+     $(".btn").text("Show Stepper");
+     $("#demo-card-wrapper").hide();
+   }
+   else {
+     $(".btn").text("Hide Stepper");
+     $("#demo-card-wrapper").show();
+   }
+  });
+
+
+  $("#submit").click(function() {
+	  let api_key = $('#api_key').val();
+	  let expire_date = $('#datepicker').val();
+      console.log(api_key,expire_date)
+  });
+  </script>
+</body>
+</html>
